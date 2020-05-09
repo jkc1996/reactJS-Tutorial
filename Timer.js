@@ -1,5 +1,6 @@
 import React from 'react';
-
+ import Resultant from './Resultant';
+ 
 class Timer extends React.Component {
 //     constructor() {
 //         super ()
@@ -19,7 +20,7 @@ class Timer extends React.Component {
 //     }
 
 
-// bllow code explains the async nature of setState()
+// bllow code explains the async nature of setState()----------------
         // constructor() {
         //         super()
         //         this.state = {
@@ -43,31 +44,54 @@ class Timer extends React.Component {
         //         </React.Fragment>)}
 
 
-      // another example of state
-      
-        constructor() {
-            super();
-            this.state = {
-                secondsElapsed: 0
-            };
-        }
-        start = () => {
-            this.setState({
-                secondsElapsed: this.state.secondsElapsed + 1
-            });
-        }
-        handleClick = (e) => {
-            this.interval = setInterval(this.start, 1000);
-        }
-        render() {
-            return ( <React.Fragment><br/><br/>
-                <button onClick = {this.handleClick}>Start timer</button><br/><br/>
-                <h2> Seconds Elapsed: 
-                    {this.state.secondsElapsed} 
-                </h2> 
+      // another example of state--------------------------------
+
+        // constructor() {
+        //     super();
+        //     this.state = {
+        //         secondsElapsed: 0
+        //     };
+        // }
+        // start = () => {
+        //     this.setState({
+        //         secondsElapsed: this.state.secondsElapsed + 1
+        //     });
+        // }
+        // handleClick = (e) => {
+        //     this.interval = setInterval(this.start, 1000);
+        // }
+        // render() {
+        //     return ( <React.Fragment><br/><br/>
+        //         <button onClick = {this.handleClick}>Start timer</button><br/><br/>
+        //         <h2> Seconds Elapsed: 
+        //             {this.state.secondsElapsed} 
+        //         </h2> 
+        //         </React.Fragment>);
+        //     }
+
+    constructor() {
+    super();
+    this.state = {
+            secondsElapsed: 0
+        };
+    }
+    start = () => {
+        this.setState({
+            secondsElapsed: this.state.secondsElapsed + 1
+        });
+    }
+    handleClick = (e) => {
+        this.interval = setInterval(this.start, 1000);
+    }
+    render() {
+        return ( <React.Fragment><br/>
+                    <button onClick = {this.handleClick}>
+                        Start Timer 
+                    </button><br/><br/>
+                    <Resultant new = {this.state.secondsElapsed}/> 
                 </React.Fragment>);
             }
-               
+
 }
 
 export default Timer;
