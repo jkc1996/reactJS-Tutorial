@@ -1,6 +1,6 @@
 import React from 'react';
  import Resultant from './Resultant';
- 
+
 class Timer extends React.Component {
 //     constructor() {
 //         super ()
@@ -68,6 +68,8 @@ class Timer extends React.Component {
         //         </h2> 
         //         </React.Fragment>);
         //     }
+
+  // below is the example of props, timer is the parent componet and Resultant is child component--------------------------------------
 
     constructor() {
     super();
