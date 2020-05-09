@@ -25,4 +25,4 @@ import './style.css';
   // }
 // }
 
-render(<App />, document.getElementById('root'));
+render(<Timer />, document.getElementById('root'));
