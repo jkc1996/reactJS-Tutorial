@@ -27,4 +27,4 @@ import './style.css';
   // }
 // }
 
-render(<Timer />, document.getElementById('root'));
+render(<Parent />, document.getElementById('root'));
