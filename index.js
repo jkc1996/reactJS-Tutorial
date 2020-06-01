@@ -5,6 +5,7 @@ import App from './App';
 import Timer from './Timer';
 import Parent from './Parent';
 import Child from './Child';
+import Default from './Default'
 import './style.css';
 
 // class App extends Component {
@@ -27,4 +28,4 @@ import './style.css';
   // }
 // }
 
-render(<Parent />, document.getElementById('root'));
+render(<Default />, document.getElementById('root'));
