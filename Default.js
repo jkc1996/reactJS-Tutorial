@@ -25,7 +25,7 @@ Default.propTypes = {
    emp: PropTypes.object
 }
 Default.defaultProps = {
-   array: "John",
+   array: ['1','2','3'],
    boolean: false,
    function: function(e){return e},
    number: 23,
